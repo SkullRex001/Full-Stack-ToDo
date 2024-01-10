@@ -5,30 +5,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+      *{
+        padding: 0px;
+        margin: 0px;
+      }
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('https://tse3.mm.bing.net/th?id=OIP.8bQP-WF6Tc-b_BFe9vJ0tgHaEK&pid=Api&P=0&h=180') no-repeat center center;
+            background-size: cover;
+            height: 100vh;
+        }
+
+        h1 {
+            display: flex;
+            justify-content: center;
+            margin-top: 150px;
+            margin-bottom: 100px;
+            color: beige;
+        }
+
+        input {
+            padding: 10px;
+            border-radius: 10px;
+            background-color: rgb(61, 59, 59);
+            color: grey;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: black;
+            border-radius: 10px;
+            color: beige;
+            border: none;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .form-container {
+            flex: 1;
+            max-width: 400px;
+            margin: 20px;
+        }
+    </style>
 </head>
 
-<body style="background-color: orange;">
+<body>
 
     <div>
-    <h1 style="display: flex; justify-content: center; margin-top: 150px; margin-bottom: 100px;">Welcome To My TODO APP</h1>
-  <div style="display: flex; justify-content: space-around;">
-    <div>
-        <div style="font-size: 30px;">Login</div>
-        <div><input type="text" placeholder="Email" style="padding: 10px; margin-top: 10px; margin-bottom: 10px;"></div>
-        <div><input type="text" placeholder="Password" style="padding: 10px;"></div>
-        <button style="background-color: black;color: orange; border: none;padding: 10px; margin-top: 10px;">Login</button>
-
+        <h1>Welcome To My TODO APP</h1>
+        <div class="container">
+            <div class="form-container">
+                <div style="font-size: 30px; color: beige;">Login</div>
+                <div><input type="text" placeholder="Email"></div>
+                <div><input type="password" placeholder="Password"></div>
+                <button>Login</button>
+            </div>
+            <div class="form-container">
+                <div style="font-size: 30px; color: beige;">Signup</div>
+                <div><input type="text" placeholder="Email"></div>
+                <div><input type="password" placeholder="Password"></div>
+                <button>SignUp</button>
+            </div>
+        </div>
     </div>
-    <div>
-        <div style="font-size: 30px;">Signup</div>
-        <div><input type="text" placeholder="Email" style="padding: 10px; margin-top: 10px; margin-bottom: 10px;"></div>
-        <div><input type="text" placeholder="Password" style="padding: 10px;"></div>
-        <button style="background-color: black;color: orange; border: none;padding: 10px; margin-top: 10px;">SignUp</button>
-
-    </div>
-    
-  </div>
-</div>
 
 </body>
 
